@@ -2,7 +2,9 @@ package lesson_1;
 
 public class FirstHomeTask {
     public static void main(String[] args){
-        GetCalculationResult();
+        GetCalculationResult();// Задание 1
+        GetDigitsSum();// Задание 2
+        GetDigitSumThree();// Задание 3
     }
 
     public static void GetCalculationResult(){
@@ -18,9 +20,32 @@ public class FirstHomeTask {
         System.out.println("Значение a=4*(b+c-1)/2="+a);
     }
 
-//Задача 2:
-//В переменной n хранится двузначное число. Создайте программу, вычисляющую и
-//выводящую на экран сумму цифр n. Например: n =26, в результате мы должны получить 8 (2+6).
+    public static void GetDigitsSum(){
+        //Задача 2:
+        // В переменной n хранится двузначное число. Создайте программу, вычисляющую и
+        // выводящую на экран сумму цифр n. Например: n =26, в результате мы должны получить 8 (2+6).
+        //CODE
+        int n=69;
+        int FirstDigit=n/10;
+        int SecondDigit=n%10;
+        int DigitSum=FirstDigit+SecondDigit;
+        System.out.println("Задание 2");
+        System.out.println("Если n="+n+" ,то сумма цифр числа n="+DigitSum);
+    }
+
+    public static void GetDigitSumThree(){
+        //Задача 3:
+        // В переменной n хранится трёхзначное число. Создайте программу, вычисляющую и
+        // выводящую на экран сумму цифр n. Например: n =126, в результате мы должны получить 9 (1+2+6).
+        //CODE
+        int n=334;
+        int GetHundred=n/100;
+        int GetTen=(n%100)/10;
+        int GetUnit=n%10;
+        int DigitSum=GetHundred+GetTen+GetUnit;
+        System.out.println("Задание 3");
+        System.out.println("Если n="+n+" ,то сумма цифр числа n="+DigitSum);
+    }
 
 //Задача 3:
 //В переменной n хранится трёхзначное число. Создайте программу, вычисляющую и
