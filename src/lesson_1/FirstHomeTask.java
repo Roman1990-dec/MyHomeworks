@@ -74,7 +74,7 @@ public class FirstHomeTask {
         int GetRemainder=q%w;
         //вывод результата
         System.out.println("Задание 5");
-        System.out.println("Если q="+q+" и w="+w+" то q/w="+GetDivResult+" и "+GetDivResult+" в остатке");
+        System.out.println("Если q="+q+" и w="+w+" то q/w="+GetDivResult+" и "+GetRemainder+" в остатке");
     }
 
     public static void GetSwitchResult(){
