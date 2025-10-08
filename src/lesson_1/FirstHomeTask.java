@@ -1,11 +1,22 @@
 package lesson_1;
 
 public class FirstHomeTask {
-}
+    public static void main(String[] args){
+        GetCalculationResult();
+    }
 
-//Задача 1:
-//Написать приложение, которое будет вычислять и выводить значение по формуле:
-//a=4*(b+c-1)/2; b и c задаем в коде самостоятельно.
+    public static void GetCalculationResult(){
+        //Задача 1:
+        // Написать приложение, которое будет вычислять и выводить значение по формуле:
+        // a=4*(b+c-1)/2; b и c задаем в коде самостоятельно.
+        //CODE
+        int b=7;
+        int c=2;
+        double a=4*(b+c-1)/2;
+        System.out.println("Задание 1");
+        System.out.println("При b="+b+" и c="+c);
+        System.out.println("Значение a=4*(b+c-1)/2="+a);
+    }
 
 //Задача 2:
 //В переменной n хранится двузначное число. Создайте программу, вычисляющую и
@@ -33,3 +44,4 @@ public class FirstHomeTask {
 //sout(b); //выведет 1
 //Усовершенствовать программу, использовать только 2 входные переменные (a,b);
 
+}
