@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class ThirdHomeTask {
     public static void main(String[] args) {
-        GetParityResult();// Задача 1
-        GetTempResults();// Задача 2
+        //GetParityResult();// Задача 1
+        //GetTempResult();// Задача 2
+        //GetSquareResult();// Задача 3
+        //GetSequenceResult();// Задача 4
     }
     public static void GetParityResult(){
             //Задача 1:
@@ -25,7 +27,7 @@ public class ThirdHomeTask {
         }
     }
 
-    public static void GetTempResults(){
+    public static void GetTempResult(){
         //Задача 2:
         //Для введенного числа t (температура на улице) вывести: Если t>–5, то вывести «Warm».
         //Если –5>= t > –20, то вывести «Normal». Если –20>= t, то вывести «Cold».
@@ -40,6 +42,35 @@ public class ThirdHomeTask {
             System.out.println("Normal");
         } else{
             System.out.println("Cold");
+        }
+    }
+
+    public static void GetSquareResult(){
+        //Задача 3:
+        //Составьте программу, выводящую на экран квадраты чисел от 10 до 20 включительно.
+        //CODE
+        System.out.println("Задание 3");
+        System.out.println("Квадраты чисел от 10 до 20:");
+
+        for (int value = 10; value <= 20; value++) {
+            int squareValue = value * value;
+            System.out.println("Квадрат числа "+value + " = " + squareValue);
+        }
+    }
+
+    public static void GetSequenceResult(){
+        //Задача 4:
+        //Необходимо, чтоб программа выводила на экран вот такую последовательность:
+        //7 14 21 28 35 42 49 56 63 70 77 84 91 98. В решении используйте цикл while.
+        //CODE
+        System.out.println("Результат выполнения программы должен быть:");
+        System.out.println("7 14 21 28 35 42 49 56 63 70 77 84 91 98");
+        System.out.println("Результат:");
+        int firstNumber=7;
+
+        while (firstNumber <= 98){
+            System.out.print(firstNumber+" ");
+            firstNumber +=7;
         }
     }
 }
