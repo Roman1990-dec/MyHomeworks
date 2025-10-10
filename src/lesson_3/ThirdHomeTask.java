@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class ThirdHomeTask {
     public static void main(String[] args) {
-        //GetParityResult();// Задача 1
-        //GetTempResult();// Задача 2
-        //GetSquareResult();// Задача 3
-        //GetSequenceResult();// Задача 4
+        GetParityResult();// Задача 1
+        GetTempResult();// Задача 2
+        GetSquareResult();// Задача 3
+        GetSequenceResult();// Задача 4
+        GetSumResult();// Задача Дополнительная
     }
     public static void GetParityResult(){
             //Задача 1:
@@ -72,5 +73,42 @@ public class ThirdHomeTask {
             System.out.print(firstNumber+" ");
             firstNumber +=7;
         }
+    }
+
+    public static void GetSumResult(){
+        //Задача *:
+        //Напишите программу, где пользователь вводит любое целое положительное число. А
+        //программа суммирует все числа от 1 до введенного пользователем числа. Для ввода
+        //числа воспользуйтесь классом Scanner. Сделать проверку, чтобы пользователь не мог
+        //ввести некорректные данные.
+        //CODE
+        System.out.println();
+        System.out.println("Задача Дополнительная");
+        Scanner input= new Scanner(System.in);
+        int number=0;
+        boolean validImput=false;
+        //Организация проверки, что введено любое целое положительное число
+        while (!validImput){
+            System.out.print("Введите любое целое положительное число -> ");
+            if (input.hasNextInt()) {
+                number = input.nextInt();
+                if (number > 0) {
+                    validImput = true;
+                } else {
+                    System.out.println("Ошибка: число должно быть положительным");
+                }
+            } else {
+                    System.out.println("Ошибка: введены некорректные данные. Введите целое " +
+                            "положительное число ");
+                    input.next();
+                }
+            }
+        //вычисление суммы
+        int sum=0;
+        for (int startValue=1;startValue <= number;startValue++){
+            sum +=startValue;
+        }
+        System.out.println("---Программа суммирования всех чисел от 1 до введенного пользователем---");
+        System.out.println("Результат выполнения= "+sum);
     }
 }
