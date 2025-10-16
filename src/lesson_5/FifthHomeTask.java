@@ -1,14 +1,12 @@
 package lesson_5;
 
-//Задача 1:
-//1.1 Создать двумерный массив, заполнить его случайными числами.
-//1.2 Добавить к каждому значению число, которое пользователь будет вводить с консоли.
-//1.3 Найти сумму всех получившихся элементов и вывести в консоль.
-
 import java.util.Scanner;
 
-public class RandomNumbersSum {
+public class FifthHomeTask {
     public static void main(String[] args){
+        NumberSum();
+    }
+    public static void NumberSum(){
         Scanner scanner= new Scanner(System.in);
         int rows=4;
         int colums=4;
@@ -39,5 +37,6 @@ public class RandomNumbersSum {
             }
         }
         System.out.println("\nСумма всех элементов: " + sum);
+
     }
 }
