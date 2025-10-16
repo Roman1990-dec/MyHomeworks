@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class FifthHomeTask {
     public static void main(String[] args){
+        System.out.println("\n--- Задача 1: Работа двумерным массивом ---");
         NumberSum();
+        System.out.println("\n--- Задача 2: Шахматная доска ---");
+        ChessBoard();
     }
     public static void NumberSum(){
         Scanner scanner= new Scanner(System.in);
@@ -39,4 +42,26 @@ public class FifthHomeTask {
         System.out.println("\nСумма всех элементов: " + sum);
 
     }
+
+    public static void ChessBoard(){
+        String[][] chessBoard = new String[8][8];
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if ((i + j) % 2 == 0) {
+                    chessBoard[i][j] = "W";
+                } else {
+                    chessBoard[i][j] = "B";
+                }
+            }
+        }
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(chessBoard[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
